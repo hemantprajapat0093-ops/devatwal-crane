@@ -6,6 +6,9 @@ let craneGroup, cabinGroup, boomBase, boomExtend, hookGroup, cableLine, hazardLi
 let suspendedLoad;
 let isDemoMode = true;
 let animClock = 0;
+let isCanvasVisible = true;
+let animFrameId = null;
+let isMobileDevice = false;
 
 // Crane State variables
 const craneState = {
@@ -20,8 +23,9 @@ function init3DCrane() {
   const container = document.getElementById('crane-3d-canvas-container');
   if (!container) return;
 
-  const width = container.clientWidth;
-  const height = container.clientHeight || 520;
+  isMobileDevice = window.innerWidth < 768 || ('ontouchstart' in window);
+  const width = container.clientWidth || 360;
+  const height = container.clientHeight || (isMobileDevice ? 420 : 520);
 
   // 1. Scene setup
   scene = new THREE.Scene();
@@ -31,16 +35,23 @@ function init3DCrane() {
   camera = new THREE.PerspectiveCamera(42, width / height, 0.1, 100);
   camera.position.set(13, 8, 14);
 
-  // 3. Renderer setup
-  renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+  // 3. Renderer setup - Optimized for Mobile 120Hz Smooth Scrolling
+  renderer = new THREE.WebGLRenderer({ 
+    antialias: !isMobileDevice, 
+    alpha: true,
+    powerPreference: isMobileDevice ? 'low-power' : 'high-performance'
+  });
   renderer.setSize(width, height);
-  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-  renderer.shadowMap.enabled = true;
-  renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+  renderer.setPixelRatio(isMobileDevice ? 1 : Math.min(window.devicePixelRatio || 1, 2));
+  renderer.shadowMap.enabled = !isMobileDevice;
+  if (!isMobileDevice) {
+    renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+  }
+  renderer.domElement.style.touchAction = 'pan-y';
   container.innerHTML = '';
   container.appendChild(renderer.domElement);
 
-  // 4. Orbit Controls
+  // 4. Orbit Controls - Touch gestures tuned to prevent vertical scroll hijacking
   if (typeof THREE.OrbitControls !== 'undefined') {
     controls = new THREE.OrbitControls(camera, renderer.domElement);
     controls.enableDamping = true;
@@ -49,6 +60,15 @@ function init3DCrane() {
     controls.minDistance = 6;
     controls.maxDistance = 26;
     controls.target.set(0, 2.5, 0);
+
+    if (isMobileDevice) {
+      controls.enableZoom = false;
+      // Single finger touch scrolls page naturally; two fingers rotate crane
+      controls.touches = {
+        ONE: THREE.TOUCH.NONE,
+        TWO: THREE.TOUCH.ROTATE
+      };
+    }
   }
 
   // 5. Lighting with high-tech blue/cyan accents
@@ -57,9 +77,11 @@ function init3DCrane() {
 
   const sunLight = new THREE.DirectionalLight(0xffffff, 1.4);
   sunLight.position.set(18, 28, 15);
-  sunLight.castShadow = true;
-  sunLight.shadow.mapSize.width = 1024;
-  sunLight.shadow.mapSize.height = 1024;
+  sunLight.castShadow = !isMobileDevice;
+  if (!isMobileDevice) {
+    sunLight.shadow.mapSize.width = 1024;
+    sunLight.shadow.mapSize.height = 1024;
+  }
   scene.add(sunLight);
 
   const fillLight = new THREE.DirectionalLight(0x38bdf8, 0.8);
@@ -77,12 +99,26 @@ function init3DCrane() {
   buildDevatwalCrane();
 
   // 8. Resize Listener
-  window.addEventListener('resize', onWindowResize);
+  window.addEventListener('resize', onWindowResize, { passive: true });
 
   // 9. Controls
   setupInteractiveControls();
 
-  // 10. Animation Loop
+  // 10. Viewport Intersection Observer (Auto-freezes WebGL loop when offscreen)
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        const wasVisible = isCanvasVisible;
+        isCanvasVisible = entry.isIntersecting;
+        if (isCanvasVisible && !wasVisible && !animFrameId) {
+          animate();
+        }
+      });
+    }, { threshold: 0.05 });
+    observer.observe(container);
+  }
+
+  // 11. Start Animation Loop
   animate();
 }
 
@@ -395,7 +431,12 @@ function updateCraneGeometry() {
 }
 
 function animate() {
-  requestAnimationFrame(animate);
+  if (!isCanvasVisible) {
+    animFrameId = null;
+    return;
+  }
+
+  animFrameId = requestAnimationFrame(animate);
   animClock += 0.02;
 
   if (isDemoMode) {
@@ -415,19 +456,23 @@ function animate() {
     controls.update();
   }
 
-  renderer.render(scene, camera);
+  if (renderer && scene && camera) {
+    renderer.render(scene, camera);
+  }
 }
 
 function onWindowResize() {
   const container = document.getElementById('crane-3d-canvas-container');
   if (!container || !renderer || !camera) return;
 
+  isMobileDevice = window.innerWidth < 768 || ('ontouchstart' in window);
   const width = container.clientWidth;
-  const height = container.clientHeight || 520;
+  const height = container.clientHeight || (isMobileDevice ? 420 : 520);
 
   camera.aspect = width / height;
   camera.updateProjectionMatrix();
   renderer.setSize(width, height);
+  renderer.setPixelRatio(isMobileDevice ? 1 : Math.min(window.devicePixelRatio || 1, 2));
 }
 
 function setupInteractiveControls() {

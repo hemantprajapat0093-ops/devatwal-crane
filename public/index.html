@@ -236,7 +236,8 @@
           
           <div class="absolute top-4 left-4 bg-slate-900/90 backdrop-blur-md px-3.5 py-2 rounded-xl border border-slate-700 text-xs text-slate-200 pointer-events-none flex items-center space-x-2">
             <i data-lucide="move" class="w-4 h-4 text-sky-400"></i>
-            <span>Drag mouse to rotate 3D view • Scroll to zoom</span>
+            <span class="hidden sm:inline">Drag mouse to rotate 3D view • Scroll to zoom</span>
+            <span class="sm:hidden">2 fingers to rotate 3D • 1 finger to scroll</span>
           </div>
 
           <div class="absolute bottom-4 right-4 bg-amber-500/95 text-black px-4 py-2 rounded-xl text-xs font-black shadow pointer-events-none">
@@ -338,7 +339,7 @@
       <div class="box-amber-bright rounded-3xl overflow-hidden flex flex-col justify-between group">
         <div>
           <div class="relative h-60 overflow-hidden bg-slate-950 cursor-pointer gallery-item" data-full-img="/images/devatwal_crane_1.jpg" data-caption="ACE 12XW Prajapati - Window AC Cabin Unit 1 (Devatwal Crane Service)">
-            <img src="/images/devatwal_crane_1.jpg" alt="ACE 12XW Prajapati Crane" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <img src="/images/devatwal_crane_1.jpg" alt="ACE 12XW Prajapati Crane" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
             <div class="absolute top-3 left-3 bg-black/90 text-amber-400 px-3 py-1 rounded-lg text-xs font-black border border-amber-500/40">
               Variety 1: Unit #1
             </div>
@@ -383,7 +384,7 @@
 
         <div>
           <div class="relative h-60 overflow-hidden bg-slate-950 cursor-pointer gallery-item" data-full-img="/images/hero_banner_partner.jpg" data-caption="ACE 14XW High-Reach - Multi-Story Construction Edition (Devatwal Crane Service)">
-            <img src="/images/hero_banner_partner.jpg" alt="ACE 14XW High-Reach Crane" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <img src="/images/hero_banner_partner.jpg" alt="ACE 14XW High-Reach Crane" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
             <div class="absolute top-3 left-3 bg-black/90 text-amber-400 px-3 py-1 rounded-lg text-xs font-black border border-amber-500/40">
               Variety 2: Unit #2
             </div>
@@ -424,7 +425,7 @@
       <div class="tech-card-bright rounded-3xl overflow-hidden flex flex-col justify-between group">
         <div>
           <div class="relative h-60 overflow-hidden bg-slate-950 cursor-pointer gallery-item" data-full-img="/images/variety_indus_banner.jpg" data-caption="Indus Heavy Industrial Crane - Extreme Industrial Workload Titan (ACE 12XW Prajapati Unit 7)">
-            <img src="/images/variety_indus_banner.jpg" alt="Indus Heavy Industrial Crane" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <img src="/images/variety_indus_banner.jpg" alt="Indus Heavy Industrial Crane" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
             <div class="absolute top-3 left-3 bg-black/90 text-sky-400 px-3 py-1 rounded-lg text-xs font-black border border-sky-500/40">
               Variety 3: Unit #3
             </div>
@@ -489,7 +490,7 @@
         <!-- 1st: Heavy Load Lifting (Precast Slabs) -->
         <div class="gallery-item box-amber-bright rounded-3xl overflow-hidden cursor-pointer group" data-full-img="/images/op_1_heavy_load_lifting.jpg" data-caption="Devatwal Crane Service - Heavy Load Lifting: Precast Concrete Slab & Beam Hoisting">
           <div class="relative h-64 overflow-hidden bg-slate-950">
-            <img src="/images/op_1_heavy_load_lifting.jpg" alt="Heavy Load Lifting" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <img src="/images/op_1_heavy_load_lifting.jpg" alt="Heavy Load Lifting" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
             <div class="absolute bottom-3 left-4 right-4">
               <span class="text-xs font-black text-amber-400 bg-black/90 border border-amber-500/40 px-2.5 py-0.5 rounded-md">Operation #1</span>
@@ -504,7 +505,7 @@
         <!-- 3rd: Industrial Machinery Handling -->
         <div class="gallery-item tech-card-bright rounded-3xl overflow-hidden cursor-pointer group" data-full-img="/images/op_3_industrial_machinery.jpg" data-caption="Devatwal Crane Service - Industrial Machinery Handling: Large Silent Generators & Factory Equipment">
           <div class="relative h-64 overflow-hidden bg-slate-950">
-            <img src="/images/op_3_industrial_machinery.jpg" alt="Industrial Machinery Handling" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <img src="/images/op_3_industrial_machinery.jpg" alt="Industrial Machinery Handling" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
             <div class="absolute bottom-3 left-4 right-4">
               <span class="text-xs font-black text-sky-400 bg-black/90 border border-sky-500/40 px-2.5 py-0.5 rounded-md">Operation #3</span>
@@ -519,7 +520,7 @@
         <!-- 4th: In-Company Work -->
         <div class="gallery-item box-amber-bright rounded-3xl overflow-hidden cursor-pointer group" data-full-img="/images/op_4_in_company_work.jpg" data-caption="Devatwal Crane Service - In-Company Work: Internal Warehouse Material Handling & Pallet Shifts">
           <div class="relative h-64 overflow-hidden bg-slate-950">
-            <img src="/images/op_4_in_company_work.jpg" alt="In-Company Work" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <img src="/images/op_4_in_company_work.jpg" alt="In-Company Work" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
             <div class="absolute bottom-3 left-4 right-4">
               <span class="text-xs font-black text-amber-400 bg-black/90 border border-amber-500/40 px-2.5 py-0.5 rounded-md">Operation #4</span>
@@ -534,7 +535,7 @@
         <!-- 5th: Container Handling -->
         <div class="gallery-item tech-card-bright rounded-3xl overflow-hidden cursor-pointer group" data-full-img="/images/op_5_container_handling.jpg" data-caption="Devatwal Crane Service - Container Handling: Shipping Freight Containers & Site Logistics">
           <div class="relative h-64 overflow-hidden bg-slate-950">
-            <img src="/images/op_5_container_handling.jpg" alt="Container Handling" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <img src="/images/op_5_container_handling.jpg" alt="Container Handling" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
             <div class="absolute bottom-3 left-4 right-4">
               <span class="text-xs font-black text-sky-400 bg-black/90 border border-sky-500/40 px-2.5 py-0.5 rounded-md">Operation #5</span>
@@ -549,7 +550,7 @@
         <!-- 7th: Plant & Factory Support -->
         <div class="gallery-item box-amber-bright rounded-3xl overflow-hidden cursor-pointer group md:col-span-2 lg:col-span-1" data-full-img="/images/op_7_plant_factory_support.jpg" data-caption="Devatwal Crane Service - Plant & Factory Support: Chemical Reactor Tanks & Industrial Boilers">
           <div class="relative h-64 overflow-hidden bg-slate-950">
-            <img src="/images/op_7_plant_factory_support.jpg" alt="Plant & Factory Support" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <img src="/images/op_7_plant_factory_support.jpg" alt="Plant & Factory Support" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
             <div class="absolute bottom-3 left-4 right-4">
               <span class="text-xs font-black text-amber-400 bg-black/90 border border-amber-500/40 px-2.5 py-0.5 rounded-md">Operation #7</span>
@@ -771,7 +772,7 @@
           <!-- Circular Photo of Founder -->
           <div class="relative w-32 h-32 rounded-full p-1.5 bg-gradient-to-tr from-amber-500 via-yellow-400 to-amber-600 shadow-[0_0_25px_rgba(245,158,11,0.6)] mb-5 group-hover:scale-105 transition-transform duration-300">
             <div class="w-full h-full rounded-full overflow-hidden bg-slate-950 border-2 border-slate-900">
-              <img src="/images/founder_satyapal.jpg" alt="Satyapal Prajapat - Founder" class="w-full h-full object-cover object-top">
+              <img src="/images/founder_satyapal.jpg" alt="Satyapal Prajapat - Founder" loading="lazy" decoding="async" class="w-full h-full object-cover object-top">
             </div>
             <span class="absolute bottom-1 right-2 w-5 h-5 bg-emerald-500 border-2 border-slate-950 rounded-full" title="Verified Active"></span>
           </div>
@@ -1025,7 +1026,7 @@
         <div class="space-y-3">
           <div class="flex items-center space-x-3">
             <div class="w-12 h-12 rounded-full overflow-hidden border-2 border-amber-500 shadow-[0_0_15px_rgba(245,158,11,0.5)] bg-slate-900">
-              <img src="/images/logo_crane_full_circle.png" alt="Devatwal Crane Logo" class="w-full h-full object-cover">
+              <img src="/images/logo_crane_full_circle.png" alt="Devatwal Crane Logo" loading="lazy" decoding="async" class="w-full h-full object-cover">
             </div>
             <div>
               <div class="text-base font-black yellow-lighting-title font-heading">DEVATWAL CRANE</div>

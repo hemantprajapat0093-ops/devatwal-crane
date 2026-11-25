@@ -14,6 +14,12 @@
   --tech-border-glow: rgba(56, 189, 248, 0.8);
 }
 
+html {
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  overscroll-behavior-y: none;
+}
+
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   background-color: #030712;
@@ -25,6 +31,61 @@ body {
     radial-gradient(circle at 20% 60%, rgba(245, 158, 11, 0.16) 0%, transparent 50%),
     linear-gradient(180deg, rgba(3, 7, 18, 0.88) 0%, rgba(8, 14, 28, 0.92) 50%, rgba(3, 7, 18, 0.95) 100%),
     url('/images/tech_building_bg.jpg') center top / cover no-repeat fixed;
+}
+
+/* ================= MOBILE BUTTERY SMOOTH 120Hz SCROLLING OPTIMIZATIONS ================= */
+@media (max-width: 1024px) {
+  body {
+    /* Replace expensive fixed background on mobile with smooth GPU scrolling */
+    background: 
+      radial-gradient(circle at 80% 20%, rgba(37, 99, 235, 0.15) 0%, transparent 45%),
+      radial-gradient(circle at 20% 60%, rgba(245, 158, 11, 0.10) 0%, transparent 50%),
+      linear-gradient(180deg, #030712 0%, #080e1c 50%, #030712 100%);
+    background-attachment: scroll !important;
+  }
+
+  /* Sticky header zero-cost solid compositing on mobile */
+  header.sticky,
+  header {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    background-color: #070D18 !important;
+  }
+
+  /* Disable heavy 70px blur filter overlays on mobile to eliminate GPU lag */
+  .lighting-glow-blue,
+  .lighting-glow-cyan,
+  .lighting-glow-amber {
+    display: none !important;
+  }
+
+  /* Optimize glassmorphism cards and remove backdrop filters on mobile for zero-lag 120fps scrolling */
+  .tech-card,
+  .tech-card-bright,
+  .box-amber-bright,
+  .corner-dock-btn,
+  [class*="backdrop-blur-"] {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+
+  .tech-card,
+  .tech-card-bright,
+  .box-amber-bright {
+    background: rgba(15, 23, 42, 0.96) !important;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.6) !important;
+  }
+
+  /* Prevent 3D canvas from swallowing mobile page scroll */
+  #crane-3d-canvas-container {
+    touch-action: pan-y !important;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  #crane-3d-canvas-container canvas {
+    touch-action: pan-y !important;
+  }
 }
 
 h1, h2, h3, h4, h5, .font-heading {
