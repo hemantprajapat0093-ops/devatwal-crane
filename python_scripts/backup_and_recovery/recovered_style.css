@@ -1,0 +1,174 @@
+/* Devatwal Crane Service - High-Tech Architectural IT Enterprise Stylesheet */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --tech-blue: #2563eb;
+  --tech-cyan: #38bdf8;
+  --tech-indigo: #6366f1;
+  --tech-surface: rgba(12, 19, 36, 0.78);
+  --tech-card: rgba(15, 23, 42, 0.75);
+  --tech-border: rgba(56, 189, 248, 0.25);
+  --tech-border-glow: rgba(56, 189, 248, 0.65);
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #030712;
+  color: #f8fafc;
+  overflow-x: hidden;
+  /* Modern High-Tech Glass Architectural Background */
+  background: 
+    radial-gradient(circle at 80% 20%, rgba(37, 99, 235, 0.18) 0%, transparent 45%),
+    radial-gradient(circle at 20% 60%, rgba(56, 189, 248, 0.14) 0%, transparent 50%),
+    linear-gradient(180deg, rgba(3, 7, 18, 0.88) 0%, rgba(8, 14, 28, 0.92) 50%, rgba(3, 7, 18, 0.95) 100%),
+    url('/images/tech_building_bg.jpg') center top / cover no-repeat fixed;
+}
+
+h1, h2, h3, h4, h5, .font-heading {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+/* Ambient Lighting Overlays */
+.lighting-glow-blue {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.22) 0%, rgba(3, 7, 18, 0) 70%);
+  filter: blur(70px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.lighting-glow-cyan {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.18) 0%, rgba(3, 7, 18, 0) 70%);
+  filter: blur(65px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Tech Glassmorphic Cards */
+.tech-card {
+  background: var(--tech-card);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid var(--tech-border);
+  box-shadow: 0 12px 36px -10px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tech-card:hover {
+  border-color: var(--tech-border-glow);
+  box-shadow: 0 18px 45px -10px rgba(37, 99, 235, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  transform: translateY(-3px);
+}
+
+/* Subtle Laser Accent Line */
+.laser-line-cyan {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(56, 189, 248, 0.9), rgba(99, 102, 241, 0.9), transparent);
+}
+
+/* Luminous Tech Button */
+.btn-tech-primary {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  border: 1px solid rgba(56, 189, 248, 0.5);
+  box-shadow: 0 4px 22px rgba(37, 99, 235, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  transition: all 0.25s ease;
+}
+
+.btn-tech-primary:hover {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  border-color: rgba(56, 189, 248, 0.9);
+  box-shadow: 0 6px 30px rgba(56, 189, 248, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  transform: translateY(-1.5px);
+}
+
+/* Fixed Bottom-Right Corner Quick Communication Dock */
+.fixed-floating-corner-dock {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  align-items: center;
+}
+
+.corner-dock-btn {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  backdrop-filter: blur(14px);
+  position: relative;
+}
+
+.corner-dock-btn:hover {
+  transform: scale(1.12);
+}
+
+.corner-dock-btn .dock-tooltip {
+  position: absolute;
+  right: 4.2rem;
+  background: #0f172a;
+  color: #fff;
+  padding: 0.4rem 0.85rem;
+  border-radius: 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateX(8px);
+  transition: all 0.2s ease;
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
+}
+
+.corner-dock-btn:hover .dock-tooltip {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #030712;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #38bdf8;
+}
+
+/* Active Selection in Booking */
+.crane-option-card.selected {
+  border-color: #38bdf8 !important;
+  background-color: rgba(56, 189, 248, 0.12) !important;
+  box-shadow: 0 0 0 1.5px #38bdf8;
+}
+
+/* Modals */
+.modal-active {
+  display: flex !important;
+  animation: techModalFade 0.2s ease-out;
+}
+
+@keyframes techModalFade {
+  from { opacity: 0; transform: scale(0.97); }
+  to { opacity: 1; transform: scale(1); }
+}
