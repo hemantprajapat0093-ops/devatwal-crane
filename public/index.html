@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devatwal Crane Service | Heavy Lifting Solutions - RIICO Ghiloth & Neemrana (301705)</title>
+  <meta name="description" content="Devatwal Crane Service - Heavy Duty Crane Contracting in RIICO Industrial Area Ghiloth, Neemrana, Alwar, Rajasthan (301705). Dual Window AC Cabin Cranes & Indus Heavy Industrial Fleet. Established 2016.">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              blue: '#2563EB',
+              cyan: '#38BDF8',
+              indigo: '#6366F1',
+              gold: '#F59E0B',
+              yellow: '#FBBF24',
+              dark: '#030712',
+              surface: 'rgba(12, 19, 36, 0.88)',
+              card: 'rgba(15, 23, 42, 0.85)',
+              border: 'rgba(56, 189, 248, 0.35)'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Three.js & OrbitControls -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+
+  <!-- Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+  <!-- Custom High-Tech Stylesheet -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="antialiased selection:bg-amber-500 selection:text-black relative">
+
+  <!-- ================= FIXED BOTTOM-RIGHT CORNER COMMUNICATION DOCK (BRIGHT & GLOWING) ================= -->
+  <aside class="fixed-floating-corner-dock" aria-label="Direct Dispatch Dock">
+    
+    <!-- Direct Phone Call Button (Bright Emerald Glow) -->
+    <a href="tel:9414333328" class="corner-dock-btn corner-dock-btn-phone text-white" title="Direct Phone Call">
+      <i data-lucide="phone-call" class="w-6 h-6"></i>
+      <span class="dock-tooltip">Call +91 9414333328 (Satyapal ji)</span>
+    </a>
+
+    <!-- Direct Email Dispatcher Button (Bright Amber Gold Glow) -->
+    <button class="corner-dock-btn corner-dock-btn-email btn-send-email text-black font-black" title="Send Email to Satyapal ji">
+      <i data-lucide="mail" class="w-6 h-6 text-black"></i>
+      <span class="dock-tooltip">Direct Email Satyapal ji</span>
+    </button>
+
+    <!-- WhatsApp Direct Trigger (Bright Lime Green Glow) -->
+    <button class="corner-dock-btn corner-dock-btn-wa btn-open-whatsapp text-white" title="WhatsApp Chat">
+      <i data-lucide="message-circle" class="w-6 h-6"></i>
+      <span class="dock-tooltip">WhatsApp Inquiries</span>
+    </button>
+
+  </aside>
+
+  <!-- ================= SLEEK WIDE NAVBAR (CIRCULAR LOGO FULL BLEED + YELLOW LIGHTING NAME + DESIGNED PILL MENU) ================= -->
+    <!-- ================= SLEEK WIDE NAVBAR (EXACT MATCH TO REFERENCE SCREENSHOT) ================= -->
+  <!-- Left: Circular Crane Logo | "Devatwal" (white) "Crane Service" (yellow) + "Heavy Lifting Solutions | Since 2016" -->
+  <!-- Center: Home (active with yellow underline), Book Slot, Leadership, Contact -->
+  <!-- Right: [Calendar] Reserve Crane (solid bright yellow rounded pill button) -->
+  <header class="sticky top-0 z-40 bg-[#070D18]/95 backdrop-blur-2xl border-b border-slate-800/90 shadow-xl">
+    <div class="w-full px-3 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-24">
+        
+        <!-- Left: Clean Circular Logo & Two-Line Title -->
+        <a href="#hero" class="flex items-center space-x-3 group cursor-pointer focus:outline-none shrink-0 pl-1 sm:pl-2">
+          <!-- Clean Circular Logo -->
+          <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-amber-400 shadow-[0_0_20px_rgba(245,158,11,0.5)] group-hover:scale-105 transition-transform shrink-0 bg-slate-950 flex items-center justify-center">
+            <img src="/images/exact_header_logo.png" alt="Devatwal Crane Service Logo" class="w-full h-full object-cover">
+          </div>
+          
+          <!-- Two-Tone Brand Title & Subtitle -->
+          <div class="leading-tight">
+            <div class="text-xl sm:text-2xl font-black tracking-tight font-heading group-hover:brightness-110 transition-all">
+              <span class="text-white">Devatwal </span>
+              <span class="text-amber-400">Crane Service</span>
+            </div>
+            <div class="text-xs sm:text-sm font-semibold text-slate-300 tracking-wide mt-0.5">
+              Heavy Lifting Solutions <span class="text-slate-500">|</span> Since 2016
+            </div>
+          </div>
+        </a>
+
+        <!-- Middle Navigation: Home, Book Slot, Leadership, Contact with proper spacing -->
+        <nav class="hidden md:flex items-center space-x-10 text-base font-semibold">
+          <a href="#hero" class="text-amber-400 font-bold border-b-2 border-amber-400 pb-1 tracking-wider hover:text-amber-300 transition-colors flex items-center space-x-1.5">
+            <span>Home</span>
+          </a>
+          <a href="#booking-section" class="text-slate-200 hover:text-amber-400 transition-colors tracking-wider font-semibold">
+            Book Slot
+          </a>
+          <a href="#leadership" class="text-slate-200 hover:text-amber-400 transition-colors tracking-wider font-semibold">
+            Leadership
+          </a>
+          <a href="#contact" class="text-slate-200 hover:text-amber-400 transition-colors tracking-wider font-semibold">
+            Contact
+          </a>
+        </nav>
+
+        <!-- Right Side: Solid Bright Yellow Reserve Crane Button -->
+        <div class="hidden sm:flex items-center space-x-4">
+          <a href="#booking-section" class="flex items-center space-x-2 bg-gradient-to-r from-amber-400 to-yellow-400 hover:from-amber-300 hover:to-yellow-300 text-black font-extrabold px-6 py-2.5 rounded-xl text-sm shadow-[0_0_20px_rgba(245,158,11,0.5)] transition-all tracking-wide">
+            <i data-lucide="calendar" class="w-4 h-4 text-black"></i>
+            <span>Reserve Crane</span>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <div class="flex items-center md:hidden">
+          <button id="mobile-menu-toggle" class="p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-white focus:outline-none">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu-drawer" class="hidden md:hidden bg-[#070D18] border-b border-slate-800 px-6 pt-4 pb-6 space-y-3">
+      <div class="flex flex-col space-y-2 text-base font-semibold text-slate-200">
+        <a href="#hero" class="py-2.5 px-3 bg-amber-500/20 text-amber-400 rounded-lg font-bold">Home</a>
+        <a href="#booking-section" class="py-2.5 px-3 hover:bg-slate-900 rounded-lg">Book Slot</a>
+        <a href="#leadership" class="py-2.5 px-3 hover:bg-slate-900 rounded-lg">Leadership</a>
+        <a href="#contact" class="py-2.5 px-3 hover:bg-slate-900 rounded-lg">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION (EXACT MATCH TO REFERENCE SCREENSHOT) ================= -->
+  <!-- ================= HERO SECTION (EXACT MASTER BANNER PROVIDED BY HEMANT SIR) ================= -->
+  <!-- 100% Exact Match to Hemant Sir's Reference Banner: Full Crane + Wording + Sunset + Interactive Hotspots -->
+  <section id="hero" class="relative bg-[#070D18] border-b border-slate-800/80 overflow-hidden">
+    <div class="w-full max-w-[1700px] mx-auto relative">
+      
+      <!-- Exact Master Banner Image (High-Res 2K with 100% preservation of Hemant sir's design) -->
+      <div class="relative w-full overflow-hidden">
+        <picture>
+          <source srcset="/images/hero_exact_master_banner_2x.jpg 2x, /images/hero_exact_master_banner.jpg 1x">
+          <img 
+            src="/images/hero_exact_master_banner.jpg" 
+            alt="Devatwal Crane Service - Lift Higher, Go Further. Safe Lifting • Strong Support • Always Reliable" 
+            class="w-full h-auto block select-none"
+            loading="eager"
+            fetchpriority="high"
+          />
+        </picture>
+
+        <!-- Interactive Clickable Hotspot 1: "Book Crane Slot Online ->" -->
+        <a 
+          href="#booking-section" 
+          class="hero-btn-hotspot hero-btn-hotspot-booking" 
+          aria-label="Book Crane Slot Online"
+          title="Book Crane Slot Online"
+        >
+          <span class="sr-only">Book Crane Slot Online</span>
+        </a>
+
+        <!-- Interactive Clickable Hotspot 2: "Get a Quote" -->
+        <button 
+          type="button" 
+          class="hero-btn-hotspot hero-btn-hotspot-quote btn-send-email" 
+          aria-label="Get a Quote - Direct Email"
+          title="Get a Quote - Direct Email"
+        >
+          <span class="sr-only">Get a Quote</span>
+        </button>
+
+      </div>
+
+      <!-- Quick Action Mobile Bar (Only visible on small phones for effortless tapping) -->
+      <div class="sm:hidden px-4 py-3 bg-[#070D18] flex items-center justify-center gap-3 border-t border-slate-800/80">
+        <a href="#booking-section" class="flex-1 text-center py-2.5 px-4 bg-amber-400 hover:bg-amber-300 text-black font-extrabold text-xs rounded-xl shadow-md transition-all">
+          Book Crane Slot
+        </a>
+        <button type="button" class="flex-1 text-center py-2.5 px-4 bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs rounded-xl border border-slate-700 btn-send-email transition-all">
+          Get a Quote
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ================= 3D CRANE SIMULATION (EXPANSIVE DESKTOP CANVAS WITH BIG SUSPENDED BOX) ================= -->
+  <section id="crane-3d-section" class="py-18 bg-[#040814]/90 border-b border-slate-800/80 relative">
+    
+
+    <div class="max-w-[96rem] mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-8">
+        <div>
+          <div class="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full text-xs font-bold bg-amber-500/15 text-amber-400 border border-amber-500/30 mb-2 shadow-[0_0_15px_rgba(245,158,11,0.2)]">
+            <i data-lucide="cpu" class="w-3.5 h-3.5 text-amber-400"></i>
+            <span>Interactive Engineering Rig</span>
+          </div>
+          <h2 class="text-2xl sm:text-4xl font-extrabold font-heading text-white tracking-tight">
+            Interactive 3D Crane Simulation Lab
+          </h2>
+          <p class="text-slate-300 text-sm sm:text-base mt-1">
+            Rotate the 3D hydraulic crane, elevate boom, extend telescopic arm, and inspect the heavy industrial container being hoisted.
+          </p>
+        </div>
+
+        <div class="mt-4 md:mt-0 flex items-center space-x-3">
+          <button id="control-demo-toggle" class="px-5 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-amber-400 text-xs sm:text-sm font-bold border border-slate-700 transition-colors shadow">
+            Pause Auto Demo
+          </button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        
+        <!-- Wide 3D Canvas Box -->
+        <div class="lg:col-span-8 bg-slate-950/95 rounded-3xl border-2 border-slate-800 relative overflow-hidden flex flex-col justify-center min-h-[480px] sm:min-h-[560px] shadow-2xl">
+          <div id="crane-3d-canvas-container" class="w-full h-[480px] sm:h-[560px] cursor-grab active:cursor-grabbing"></div>
+          
+          <div class="absolute top-4 left-4 bg-slate-900/90 backdrop-blur-md px-3.5 py-2 rounded-xl border border-slate-700 text-xs text-slate-200 pointer-events-none flex items-center space-x-2">
+            <i data-lucide="move" class="w-4 h-4 text-sky-400"></i>
+            <span>Drag mouse to rotate 3D view • Scroll to zoom</span>
+          </div>
+
+          <div class="absolute bottom-4 right-4 bg-amber-500/95 text-black px-4 py-2 rounded-xl text-xs font-black shadow pointer-events-none">
+            📦 Hoisting Industrial Container Crate
+          </div>
+        </div>
+
+        <!-- 3D Rig Controls Panel (Bright Box) -->
+        <div class="lg:col-span-4 box-amber-bright rounded-3xl p-7 flex flex-col justify-between space-y-6">
+          <div>
+            <h3 class="text-xl font-bold text-white flex items-center space-x-2 font-heading">
+              <i data-lucide="sliders" class="w-5 h-5 text-amber-400"></i>
+              <span>Manual Rig Controls</span>
+            </h3>
+            <p class="text-xs text-slate-300 mt-1">Adjust hydraulic crane parameters interactively:</p>
+
+            <div class="space-y-4 mt-6">
+              <div>
+                <div class="flex justify-between text-xs font-bold text-slate-200 mb-1.5">
+                  <span>Boom Elevation Angle</span>
+                  <span class="text-amber-400 font-mono">0° - 60°</span>
+                </div>
+                <input type="range" id="control-boom-angle" min="0.1" max="0.75" step="0.01" value="0.35" class="w-full cursor-pointer accent-amber-500">
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-bold text-slate-200 mb-1.5">
+                  <span>Telescopic Boom Extension</span>
+                  <span class="text-amber-400 font-mono">0m - 2.5m</span>
+                </div>
+                <input type="range" id="control-boom-extend" min="0" max="2.5" step="0.05" value="0.8" class="w-full cursor-pointer accent-amber-500">
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-bold text-slate-200 mb-1.5">
+                  <span>Hook & Wire Rope Height</span>
+                  <span class="text-amber-400 font-mono">Up / Down</span>
+                </div>
+                <input type="range" id="control-hook-height" min="1.0" max="3.5" step="0.05" value="2.0" class="w-full cursor-pointer accent-amber-500">
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-bold text-slate-200 mb-1.5">
+                  <span>Turntable Slew Rotation</span>
+                  <span class="text-amber-400 font-mono">360°</span>
+                </div>
+                <input type="range" id="control-cabin-rotate" min="-1.5" max="1.5" step="0.05" value="0" class="w-full cursor-pointer accent-amber-500">
+              </div>
+            </div>
+          </div>
+
+          <div class="border-t border-slate-800 pt-5">
+            <div class="text-xs font-bold text-slate-300 mb-3">Fleet Model Presets:</div>
+            <div class="grid grid-cols-3 gap-2.5">
+              <button onclick="window.setCranePreset('12xw')" class="px-2 py-2.5 bg-slate-900 hover:bg-amber-500 hover:text-black rounded-xl text-xs font-bold text-center border border-slate-700 transition-colors">
+                ACE 12XW
+              </button>
+              <button onclick="window.setCranePreset('14xw')" class="px-2 py-2.5 bg-slate-900 hover:bg-amber-500 hover:text-black rounded-xl text-xs font-bold text-center border border-slate-700 transition-colors">
+                ACE 14XW
+              </button>
+              <button onclick="window.setCranePreset('indus')" class="px-2 py-2.5 bg-slate-900 hover:bg-amber-500 hover:text-black rounded-xl text-xs font-bold text-center border border-slate-700 transition-colors">
+                Indus Titan
+              </button>
+            </div>
+
+            <a href="#booking-section" class="mt-5 w-full flex items-center justify-center space-x-2 btn-sunset-primary text-black py-3 rounded-xl font-black text-sm uppercase tracking-wider shadow-[0_0_20px_rgba(245,158,11,0.5)] transition-all">
+              <i data-lucide="check-circle" class="w-4 h-4"></i>
+              <span>Book Selected Variety</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= 3 CRANE VARIETIES SHOWCASE (BRIGHT CARDS) ================= -->
+  <section id="fleet" class="py-18 lg:py-24 max-w-[96rem] mx-auto px-6 sm:px-8 lg:px-12 relative">
+    <div class="lighting-glow-cyan top-1/2 left-0"></div>
+
+    <div class="text-center max-w-3xl mx-auto mb-16 relative z-10">
+      <div class="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full text-xs font-bold bg-amber-500/15 text-amber-400 border border-amber-500/30 mb-3 shadow-[0_0_15px_rgba(245,158,11,0.2)]">
+        <i data-lucide="truck" class="w-3.5 h-3.5 text-amber-400"></i>
+        <span>Engineered Fleet Portfolio</span>
+      </div>
+      <h2 class="text-3xl sm:text-5xl font-extrabold font-heading text-white tracking-tight">
+        3 Distinct Crane Varieties Available
+      </h2>
+      <p class="text-slate-200 text-sm sm:text-base mt-3">
+        Featuring <strong>2 specialized Window AC Cabin Cranes</strong> and <strong>1 Indus Company Heavy Industrial Crane</strong>, tailored to fulfill any lifting requirement across RIICO Ghiloth & Neemrana (Pincode: 301705).
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
+      
+      <!-- VARIETY 1: ACE 12XW (WINDOW AC CABIN) -->
+      <div class="box-amber-bright rounded-3xl overflow-hidden flex flex-col justify-between group">
+        <div>
+          <div class="relative h-60 overflow-hidden bg-slate-950 cursor-pointer gallery-item" data-full-img="/images/devatwal_crane_1.jpg" data-caption="ACE 12XW Prajapati - Window AC Cabin Unit 1 (Devatwal Crane Service)">
+            <img src="/images/devatwal_crane_1.jpg" alt="ACE 12XW Prajapati Crane" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute top-3 left-3 bg-black/90 text-amber-400 px-3 py-1 rounded-lg text-xs font-black border border-amber-500/40">
+              Variety 1: Unit #1
+            </div>
+            <div class="absolute bottom-3 right-3 bg-amber-500 text-black px-3 py-1 rounded-lg text-xs font-black shadow">
+              <span>❄️ Window AC Cabin</span>
+            </div>
+          </div>
+
+          <div class="p-6 sm:p-7">
+            <h3 class="text-xl font-bold text-white font-heading">
+              ACE 12XW Hydra Crane (Window AC Cabin)
+            </h3>
+            <p class="text-xs text-amber-400 font-bold mb-3">
+              12 Ton Pick & Carry • Operator Stamina Optimized
+            </p>
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-5">
+              Equipped with a high-capacity <strong>Window AC cabin</strong> to keep operators alert and fatigue-free during extreme Rajasthan summer shifts. Excellent 360-degree turning radius for cramped factory lanes, workshop machine shifts, and construction column erection.
+            </p>
+
+            <div class="grid grid-cols-2 gap-2 text-xs text-slate-200 border-t border-slate-800 pt-4 mb-4">
+              <div><strong>Capacity:</strong> 12 Tons Lift</div>
+              <div><strong>Cabin:</strong> Window AC Fitted</div>
+              <div><strong>Boom:</strong> 3-Stage Synchro</div>
+              <div><strong>Application:</strong> Machine Shifts</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-6 sm:p-7 pt-0">
+          <button class="btn-choose-crane w-full flex items-center justify-center space-x-2 bg-slate-900 hover:bg-amber-500 hover:text-black text-slate-200 py-3 rounded-xl font-bold text-sm border border-slate-700 hover:border-amber-400 transition-all" data-crane="ACE 12XW Hydra (Window AC Cabin)">
+            <i data-lucide="calendar" class="w-4 h-4"></i>
+            <span>Select Variety 1</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- VARIETY 2: ACE 14XW (WINDOW AC CABIN HIGH REACH) -->
+      <div class="box-amber-bright rounded-3xl overflow-hidden flex flex-col justify-between group relative border-amber-500/80 shadow-[0_0_30px_rgba(245,158,11,0.25)]">
+        <div class="absolute -top-3 right-5 z-10 bg-amber-500 text-black font-black text-[11px] px-4 py-1 rounded-full uppercase tracking-wider shadow-[0_0_15px_rgba(245,158,11,0.5)]">
+          High-Reach Edition
+        </div>
+
+        <div>
+          <div class="relative h-60 overflow-hidden bg-slate-950 cursor-pointer gallery-item" data-full-img="/images/hero_banner_partner.jpg" data-caption="ACE 14XW High-Reach - Multi-Story Construction Edition (Devatwal Crane Service)">
+            <img src="/images/hero_banner_partner.jpg" alt="ACE 14XW High-Reach Crane" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute top-3 left-3 bg-black/90 text-amber-400 px-3 py-1 rounded-lg text-xs font-black border border-amber-500/40">
+              Variety 2: Unit #2
+            </div>
+            <div class="absolute bottom-3 right-3 bg-amber-500 text-black px-3 py-1 rounded-lg text-xs font-black shadow">
+              <span>❄️ Window AC Cabin</span>
+            </div>
+          </div>
+
+          <div class="p-6 sm:p-7">
+            <h3 class="text-xl font-bold text-white font-heading">
+              ACE 14XW High-Reach Crane (Window AC Cabin)
+            </h3>
+            <p class="text-xs text-amber-400 font-bold mb-3">
+              14 Ton High-Lift • Multi-Story Structural Erection
+            </p>
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-5">
+              Engineered with extended multi-section hydraulic boom reach for multi-story commercial building frames, high roof trusses, and precast concrete slab placement. Complete with <strong>Window AC cabin</strong> for round-the-clock shift reliability.
+            </p>
+
+            <div class="grid grid-cols-2 gap-2 text-xs text-slate-200 border-t border-slate-800 pt-4 mb-4">
+              <div><strong>Capacity:</strong> 14 Tons High-Lift</div>
+              <div><strong>Cabin:</strong> Window AC Climate</div>
+              <div><strong>Boom Reach:</strong> Extended Height</div>
+              <div><strong>Application:</strong> High-Rise Framework</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-6 sm:p-7 pt-0">
+          <button class="btn-choose-crane btn-sunset-primary w-full flex items-center justify-center space-x-2 text-black py-3 rounded-xl font-black text-sm uppercase tracking-wider transition-all" data-crane="ACE 14XW High-Reach (Window AC Cabin)">
+            <i data-lucide="calendar" class="w-4 h-4"></i>
+            <span>Select Variety 2</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- VARIETY 3: INDUS HEAVY CRANE (4TH UPLOADED IMAGE) -->
+      <div class="tech-card-bright rounded-3xl overflow-hidden flex flex-col justify-between group">
+        <div>
+          <div class="relative h-60 overflow-hidden bg-slate-950 cursor-pointer gallery-item" data-full-img="/images/variety_indus_banner.jpg" data-caption="Indus Heavy Industrial Crane - Extreme Industrial Workload Titan (ACE 12XW Prajapati Unit 7)">
+            <img src="/images/variety_indus_banner.jpg" alt="Indus Heavy Industrial Crane" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute top-3 left-3 bg-black/90 text-sky-400 px-3 py-1 rounded-lg text-xs font-black border border-sky-500/40">
+              Variety 3: Unit #3
+            </div>
+            <div class="absolute bottom-3 right-3 bg-blue-600 text-white px-3 py-1 rounded-lg text-xs font-bold shadow">
+              <span>🏭 Indus Heavy Grade</span>
+            </div>
+          </div>
+
+          <div class="p-6 sm:p-7">
+            <h3 class="text-xl font-bold text-white font-heading">
+              Indus Heavy Industrial Crane (Workload Titan)
+            </h3>
+            <p class="text-xs text-sky-400 font-bold mb-3">
+              Extreme Workload Rating • High Tonnage Capacity
+            </p>
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-5">
+              Indus Company industrial-grade heavy crane engineered specifically for severe continuous duty cycles, heavy foundry furnaces, multi-ton transformers, and massive manufacturing plant reactor shifts.
+            </p>
+
+            <div class="grid grid-cols-2 gap-2 text-xs text-slate-200 border-t border-slate-800 pt-4 mb-4">
+              <div><strong>Grade:</strong> Indus Heavy Industrial</div>
+              <div><strong>Rating:</strong> Severe Duty Cycle</div>
+              <div><strong>Winch:</strong> Forged Steel High-Pull</div>
+              <div><strong>Application:</strong> Heavy Plant Relocation</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-6 sm:p-7 pt-0">
+          <button class="btn-choose-crane w-full flex items-center justify-center space-x-2 bg-slate-900 hover:bg-blue-600 hover:text-white text-slate-200 py-3 rounded-xl font-bold text-sm border border-slate-700 hover:border-blue-500 transition-all" data-crane="Indus Heavy Industrial Crane (High Workload)">
+            <i data-lucide="calendar" class="w-4 h-4"></i>
+            <span>Select Variety 3</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= SPECIALIZED CRANE OPERATIONS GALLERY (EXACT 5 IMAGES KEPT) ================= -->
+  <section id="services-gallery" class="py-18 bg-[#040814]/90 border-y border-slate-800/80 relative">
+    <div class="lighting-glow-blue top-0 right-1/4"></div>
+
+    <div class="max-w-[96rem] mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <div class="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full text-xs font-bold bg-amber-500/15 text-amber-400 border border-amber-500/30 mb-2 shadow-[0_0_15px_rgba(245,158,11,0.2)]">
+          <i data-lucide="grid" class="w-3.5 h-3.5 text-amber-400"></i>
+          <span>Specialized Lifting Operations</span>
+        </div>
+        <h2 class="text-2xl sm:text-4xl font-extrabold font-heading text-white tracking-tight">
+          Specialized Crane Operations & Live Photo Gallery
+        </h2>
+        <p class="text-slate-300 text-sm sm:text-base mt-2">
+          Real photographic portfolio of Devatwal Crane Service executing high-precision heavy lifts across industrial, commercial, and structural jobs.
+        </p>
+      </div>
+
+      <!-- Exactly 5 Selected Specialized Operations Cards (Bright Cards) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- 1st: Heavy Load Lifting (Precast Slabs) -->
+        <div class="gallery-item box-amber-bright rounded-3xl overflow-hidden cursor-pointer group" data-full-img="/images/op_1_heavy_load_lifting.jpg" data-caption="Devatwal Crane Service - Heavy Load Lifting: Precast Concrete Slab & Beam Hoisting">
+          <div class="relative h-64 overflow-hidden bg-slate-950">
+            <img src="/images/op_1_heavy_load_lifting.jpg" alt="Heavy Load Lifting" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+            <div class="absolute bottom-3 left-4 right-4">
+              <span class="text-xs font-black text-amber-400 bg-black/90 border border-amber-500/40 px-2.5 py-0.5 rounded-md">Operation #1</span>
+              <h4 class="text-white font-bold text-base mt-1">Heavy Load Lifting (Precast Slabs)</h4>
+            </div>
+          </div>
+          <div class="p-5 text-xs text-slate-300 leading-relaxed">
+            Precision pick-and-place operation for multi-ton concrete slabs and beams on multi-story building frames.
+          </div>
+        </div>
+
+        <!-- 3rd: Industrial Machinery Handling -->
+        <div class="gallery-item tech-card-bright rounded-3xl overflow-hidden cursor-pointer group" data-full-img="/images/op_3_industrial_machinery.jpg" data-caption="Devatwal Crane Service - Industrial Machinery Handling: Large Silent Generators & Factory Equipment">
+          <div class="relative h-64 overflow-hidden bg-slate-950">
+            <img src="/images/op_3_industrial_machinery.jpg" alt="Industrial Machinery Handling" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+            <div class="absolute bottom-3 left-4 right-4">
+              <span class="text-xs font-black text-sky-400 bg-black/90 border border-sky-500/40 px-2.5 py-0.5 rounded-md">Operation #3</span>
+              <h4 class="text-white font-bold text-base mt-1">Industrial Machinery Handling</h4>
+            </div>
+          </div>
+          <div class="p-5 text-xs text-slate-300 leading-relaxed">
+            Tonnage loading, transport rigging, and exact foundation placement of large silent generators and plant machinery.
+          </div>
+        </div>
+
+        <!-- 4th: In-Company Work -->
+        <div class="gallery-item box-amber-bright rounded-3xl overflow-hidden cursor-pointer group" data-full-img="/images/op_4_in_company_work.jpg" data-caption="Devatwal Crane Service - In-Company Work: Internal Warehouse Material Handling & Pallet Shifts">
+          <div class="relative h-64 overflow-hidden bg-slate-950">
+            <img src="/images/op_4_in_company_work.jpg" alt="In-Company Work" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+            <div class="absolute bottom-3 left-4 right-4">
+              <span class="text-xs font-black text-amber-400 bg-black/90 border border-amber-500/40 px-2.5 py-0.5 rounded-md">Operation #4</span>
+              <h4 class="text-white font-bold text-base mt-1">In-Company Material Handling</h4>
+            </div>
+          </div>
+          <div class="p-5 text-xs text-slate-300 leading-relaxed">
+            Compact maneuvering inside manufacturing sheds, handling palletized raw materials, bagged goods, and internal equipment.
+          </div>
+        </div>
+
+        <!-- 5th: Container Handling -->
+        <div class="gallery-item tech-card-bright rounded-3xl overflow-hidden cursor-pointer group" data-full-img="/images/op_5_container_handling.jpg" data-caption="Devatwal Crane Service - Container Handling: Shipping Freight Containers & Site Logistics">
+          <div class="relative h-64 overflow-hidden bg-slate-950">
+            <img src="/images/op_5_container_handling.jpg" alt="Container Handling" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+            <div class="absolute bottom-3 left-4 right-4">
+              <span class="text-xs font-black text-sky-400 bg-black/90 border border-sky-500/40 px-2.5 py-0.5 rounded-md">Operation #5</span>
+              <h4 class="text-white font-bold text-base mt-1">Shipping Container Handling</h4>
+            </div>
+          </div>
+          <div class="p-5 text-xs text-slate-300 leading-relaxed">
+            Rapid loading, offloading, and yard stacking of 20ft/40ft shipping freight containers and portable office cabins.
+          </div>
+        </div>
+
+        <!-- 7th: Plant & Factory Support -->
+        <div class="gallery-item box-amber-bright rounded-3xl overflow-hidden cursor-pointer group md:col-span-2 lg:col-span-1" data-full-img="/images/op_7_plant_factory_support.jpg" data-caption="Devatwal Crane Service - Plant & Factory Support: Chemical Reactor Tanks & Industrial Boilers">
+          <div class="relative h-64 overflow-hidden bg-slate-950">
+            <img src="/images/op_7_plant_factory_support.jpg" alt="Plant & Factory Support" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+            <div class="absolute bottom-3 left-4 right-4">
+              <span class="text-xs font-black text-amber-400 bg-black/90 border border-amber-500/40 px-2.5 py-0.5 rounded-md">Operation #7</span>
+              <h4 class="text-white font-bold text-base mt-1">Plant & Factory Tank Erection</h4>
+            </div>
+          </div>
+          <div class="p-5 text-xs text-slate-300 leading-relaxed">
+            Heavy lifting of large horizontal storage tanks, industrial pressure vessels, and specialized refinery infrastructure.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= ONLINE CRANE BOOKING PORTAL ================= -->
+  <section id="booking-section" class="py-20 lg:py-28 max-w-[96rem] mx-auto px-6 sm:px-8 lg:px-12 relative">
+    <div class="lighting-glow-blue top-1/4 right-0"></div>
+
+    <div class="text-center max-w-3xl mx-auto mb-14 relative z-10">
+      <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full text-xs font-bold bg-amber-500/15 text-amber-400 border border-amber-500/30 mb-3 shadow-[0_0_15px_rgba(245,158,11,0.2)]">
+        <i data-lucide="calendar" class="w-4 h-4 text-amber-400"></i>
+        <span>Direct Crane Reservation System</span>
+      </div>
+      <h2 class="text-3xl sm:text-5xl font-black font-heading text-white tracking-tight">
+        Book Your Crane Slot Online
+      </h2>
+      <p class="text-slate-300 text-base sm:text-lg mt-3 font-normal">
+        Choose your required crane model, job specifications, and date below. An automated dispatch booking is routed directly to <strong>satyapaldevatwal@gmail.com</strong>.
+      </p>
+    </div>
+
+    <!-- Redesigned High-Tech Dark Obsidian Booking Card -->
+    <div class="max-w-4xl mx-auto bg-slate-900/95 backdrop-blur-2xl border border-slate-700/80 rounded-3xl p-6 sm:p-10 shadow-[0_20px_50px_rgba(0,0,0,0.85)] relative z-10">
+      
+      <form id="crane-booking-form" class="space-y-8">
+        
+        <!-- STEP 1: Select Crane Variety -->
+        <div>
+          <label class="block text-xs sm:text-sm font-bold text-amber-400 uppercase tracking-wider mb-3 flex items-center space-x-2">
+            <span class="w-6 h-6 rounded-full bg-amber-400 text-black flex items-center justify-center text-xs font-black">1</span>
+            <span>Select Crane Variety *</span>
+          </label>
+          <input type="hidden" id="selected-crane-type" value="ACE 12XW Hydra (Window AC Cabin)">
+          
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            
+            <div class="crane-option-card selected p-4 rounded-2xl border-2 border-amber-400 bg-slate-950/90 cursor-pointer transition-all shadow-[0_0_20px_rgba(245,158,11,0.2)]" data-crane-val="ACE 12XW Hydra (Window AC Cabin)" data-preset="12xw">
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs font-black text-amber-400">12 TON</span>
+                <span class="text-[11px] bg-amber-500/20 text-amber-300 px-2 py-0.5 rounded-full border border-amber-500/40 font-bold">❄️ Window AC</span>
+              </div>
+              <div class="font-bold text-base text-white font-heading">ACE 12XW Hydra</div>
+              <div class="text-xs text-slate-400 mt-1">Machinery shifts, columns, building slabs & trusses</div>
+            </div>
+
+            <div class="crane-option-card p-4 rounded-2xl border border-slate-700 bg-slate-950/80 cursor-pointer transition-all hover:border-slate-500" data-crane-val="ACE 14XW High-Reach (Window AC Cabin)" data-preset="14xw">
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs font-black text-amber-400">14 TON</span>
+                <span class="text-[11px] bg-amber-500/20 text-amber-300 px-2 py-0.5 rounded-full border border-amber-500/40 font-bold">❄️ Window AC</span>
+              </div>
+              <div class="font-bold text-base text-white font-heading">ACE 14XW High-Reach</div>
+              <div class="text-xs text-slate-400 mt-1">Multi-story framework, heavy high-elevation lifting</div>
+            </div>
+
+            <div class="crane-option-card p-4 rounded-2xl border border-slate-700 bg-slate-950/80 cursor-pointer transition-all hover:border-slate-500" data-crane-val="Indus Heavy Industrial Crane (High Workload)" data-preset="indus">
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs font-black text-sky-400">HEAVY TITAN</span>
+                <span class="text-[11px] bg-blue-500/20 text-sky-300 px-2 py-0.5 rounded-full border border-blue-500/40 font-bold">🏭 Indus Grade</span>
+              </div>
+              <div class="font-bold text-base text-white font-heading">Indus Heavy Industrial</div>
+              <div class="text-xs text-slate-400 mt-1">Extreme industrial workloads, plant vessels & boilers</div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- STEP 2: Work Scope & Weight -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div>
+            <label class="block text-xs sm:text-sm font-bold text-amber-400 uppercase tracking-wider mb-2 flex items-center space-x-2">
+              <span class="w-6 h-6 rounded-full bg-amber-400 text-black flex items-center justify-center text-xs font-black">2</span>
+              <span>Nature of Work *</span>
+            </label>
+            <select id="bk-work-type" required class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-amber-400">
+              <option value="Building Construction & Precast Slab Placement">🏢 Building Construction & Precast Slab Placement</option>
+              <option value="Heavy Industrial Machinery Loading & Unloading">⚙️ Heavy Machinery Loading & Unloading</option>
+              <option value="Industrial Shed Erection & Steel Trusses">🏭 Industrial Shed Erection & Steel Trusses</option>
+              <option value="Chemical Tank & Reactor Vessel Placement">🧪 Chemical Tank & Reactor Vessel Placement</option>
+              <option value="Shipping Container Handling & Yard Logistics">📦 Shipping Container Handling & Logistics</option>
+              <option value="Commercial Vehicle & Automobile Hoisting">🚗 Commercial Vehicle & Automobile Hoisting</option>
+              <option value="Emergency 24/7 Breakdown & Site Recovery">🚨 Emergency Breakdown & Site Recovery</option>
+              <option value="Other Heavy Industrial Lift">🏗️ General Heavy Duty Lifting Work</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-xs sm:text-sm font-bold text-amber-400 uppercase tracking-wider mb-2 flex items-center space-x-2">
+              <span class="w-6 h-6 rounded-full bg-amber-400 text-black flex items-center justify-center text-xs font-black">3</span>
+              <span>Estimated Load Weight</span>
+            </label>
+            <select id="bk-load-weight" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-amber-400">
+              <option value="Up to 5 Tons">Up to 5 Tons (Light-Medium Duty)</option>
+              <option value="5 to 10 Tons">5 to 10 Tons (Standard Heavy Lift)</option>
+              <option value="10 to 14 Tons">10 to 14 Tons (ACE Window AC Cabin Capacity)</option>
+              <option value="15 to 25+ Tons">15 to 25+ Tons (Indus Industrial Titan Capacity)</option>
+              <option value="On-Site Assessment Needed">On-Site Assessment Required</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- STEP 3: Date, Shift Slot, Pincode -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <div>
+            <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">
+              Required Date *
+            </label>
+            <input type="date" id="bk-date" required class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-amber-400">
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">
+              Time Shift Slot *
+            </label>
+            <select id="bk-time-slot" required class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-amber-400">
+              <option value="Immediate Emergency Dispatch">⚡ Immediate Dispatch (Within 30-45 mins)</option>
+              <option value="Morning Shift (08:00 AM - 12:00 PM)">🌅 Morning Shift (08:00 AM - 12:00 PM)</option>
+              <option value="Afternoon Shift (12:00 PM - 04:00 PM)">☀️ Afternoon Shift (12:00 PM - 04:00 PM)</option>
+              <option value="Evening Shift (04:00 PM - 08:00 PM)">🌆 Evening Shift (04:00 PM - 08:00 PM)</option>
+              <option value="Night Full Shift (08:00 PM - 08:00 AM)">🌙 Night / Over-Time Shift (Full Night)</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">
+              Service Pincode
+            </label>
+            <input type="text" id="bk-pincode" value="301705" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm font-mono font-bold focus:outline-none" readonly title="Complete coverage across 301705 postal zone">
+          </div>
+        </div>
+
+        <!-- Site Location Address -->
+        <div>
+          <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">
+            Project Site Location Address (301705 Industrial Zone) *
+          </label>
+          <input type="text" id="bk-location" required placeholder="e.g. RIICO Industrial Area Ghiloth, Plot No... / Japanese Zone Neemrana" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-amber-400">
+        </div>
+
+        <!-- STEP 4: Contact Information -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <div>
+            <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">
+              Contact Person / Company Name *
+            </label>
+            <input type="text" id="bk-name" required placeholder="Your Name or Company" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-amber-400">
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">
+              Mobile Phone Number *
+            </label>
+            <input type="tel" id="bk-phone" required placeholder="98XXXXXXXX" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm font-mono focus:outline-none focus:border-amber-400">
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">
+              Email Address
+            </label>
+            <input type="email" id="bk-email" placeholder="client@company.com" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-amber-400">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">
+            Special Instructions / Job Scope
+          </label>
+          <textarea id="bk-notes" rows="3" placeholder="Provide dimensions, terrain condition, safety specifications, or lifting clearances..." class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-amber-400"></textarea>
+        </div>
+
+        <div class="pt-2">
+          <button type="submit" id="btn-submit-booking" class="w-full bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-500 hover:from-amber-300 hover:to-yellow-300 text-black font-black py-4 rounded-xl text-base tracking-wider uppercase shadow-[0_0_25px_rgba(245,158,11,0.5)] flex items-center justify-center space-x-2 transition-all">
+            <i data-lucide="check-circle" class="w-5 h-5 text-black"></i>
+            <span>Confirm Crane Slot & Transmit Booking</span>
+          </button>
+          <p class="text-center text-xs text-slate-400 mt-2">
+            🔒 Booking notification is automatically logged and sent to <strong>satyapaldevatwal@gmail.com</strong>.
+          </p>
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+  <!-- ================= LEADERSHIP & MANAGEMENT (WITH REAL CIRCULAR FOUNDER PHOTO) ================= -->
+  <section id="leadership" class="py-18 bg-[#040814]/90 border-t border-slate-800/80 relative">
+    <div class="lighting-glow-cyan -top-20 left-10"></div>
+
+    <div class="max-w-[96rem] mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full text-xs font-bold bg-amber-500/15 text-amber-400 border border-amber-500/30 mb-3 shadow-[0_0_15px_rgba(245,158,11,0.2)]">
+          <i data-lucide="award" class="w-3.5 h-3.5 text-amber-400"></i>
+          <span>Executive Leadership</span>
+        </div>
+        <h2 class="text-3xl sm:text-5xl font-extrabold font-heading text-white tracking-tight">
+          Founders & Management Team
+        </h2>
+        <p class="text-slate-200 text-sm sm:text-base mt-3">
+          Guiding Devatwal Crane Service since 2016 with high technical discipline, safety compliance, and direct customer care:
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- FOUNDER: Satyapal Prajapat (WITH REAL CIRCULAR PHOTO) -->
+        <div class="box-amber-bright rounded-3xl p-7 relative group flex flex-col items-center text-center">
+          <!-- Circular Photo of Founder -->
+          <div class="relative w-32 h-32 rounded-full p-1.5 bg-gradient-to-tr from-amber-500 via-yellow-400 to-amber-600 shadow-[0_0_25px_rgba(245,158,11,0.6)] mb-5 group-hover:scale-105 transition-transform duration-300">
+            <div class="w-full h-full rounded-full overflow-hidden bg-slate-950 border-2 border-slate-900">
+              <img src="/images/founder_satyapal.jpg" alt="Satyapal Prajapat - Founder" class="w-full h-full object-cover object-top">
+            </div>
+            <span class="absolute bottom-1 right-2 w-5 h-5 bg-emerald-500 border-2 border-slate-950 rounded-full" title="Verified Active"></span>
+          </div>
+
+          <div class="inline-block px-4 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-black uppercase mb-2 border border-amber-500/40">
+            Founder & Managing Director
+          </div>
+          <h3 class="text-2xl font-bold text-white font-heading">
+            Satyapal Prajapat
+          </h3>
+          <p class="text-xs text-amber-400 font-bold mb-4">
+            Operations Head • Fleet Logistics
+          </p>
+          <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-6">
+            Founded Devatwal Crane Service in 2016. Possesses over 10 years of operational experience in industrial lifting, project feasibility, and rigorous zero-accident safety governance across Rajasthan.
+          </p>
+
+          <div class="w-full space-y-2 border-t border-slate-800/80 pt-4 text-xs text-slate-300 text-left">
+            <div><strong class="text-white">Direct Lines:</strong> <a href="tel:9414333328" class="text-amber-400 font-bold hover:underline">+91 9414333328</a> <span class="text-slate-500">/</span> <a href="tel:9950233073" class="text-amber-400 font-bold hover:underline">+91 9950233073</a></div>
+            <div><strong class="text-white">Email:</strong> <a href="mailto:satyapaldevatwal@gmail.com" class="text-amber-400 hover:underline">satyapaldevatwal@gmail.com</a></div>
+          </div>
+        </div>
+
+        <!-- CO-FOUNDER: Maman Prajapat -->
+        <div class="tech-card-bright rounded-3xl p-7 group flex flex-col items-center text-center">
+          <div class="relative w-32 h-32 rounded-full p-1.5 bg-gradient-to-tr from-slate-700 via-sky-400 to-slate-800 shadow-[0_0_20px_rgba(56,189,248,0.4)] mb-5 group-hover:scale-105 transition-transform duration-300">
+            <div class="w-full h-full rounded-full overflow-hidden bg-slate-900 border-2 border-slate-900 flex items-center justify-center text-3xl font-black text-sky-400 font-heading">
+              MP
+            </div>
+          </div>
+
+          <div class="inline-block px-4 py-1 rounded-full bg-slate-800 text-sky-300 text-xs font-bold uppercase mb-2 border border-slate-700">
+            Co-Founder & Dispatch Lead
+          </div>
+          <h3 class="text-2xl font-bold text-white font-heading">
+            Maman Prajapat
+          </h3>
+          <p class="text-xs text-sky-400 font-bold mb-4">
+            Fleet Dispatch & Operations
+          </p>
+          <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-6">
+            Supervises rapid emergency crane dispatch, route clearances, and complex site deployment throughout RIICO Ghiloth, Neemrana, and regional corridors.
+          </p>
+
+          <div class="w-full space-y-2 border-t border-slate-800/80 pt-4 text-xs text-slate-300 text-left">
+            <div><strong class="text-white">Direct Line:</strong> <a href="tel:8003721244" class="text-sky-400 font-bold hover:underline">+91 8003721244</a></div>
+            <div><strong class="text-white">Specialty:</strong> 24/7 Rapid Response</div>
+          </div>
+        </div>
+
+        <!-- CO-FOUNDER: Dharminder Prajapat -->
+        <div class="box-amber-bright rounded-3xl p-7 group flex flex-col items-center text-center">
+          <div class="relative w-32 h-32 rounded-full p-1.5 bg-gradient-to-tr from-slate-700 via-amber-500 to-slate-800 shadow-[0_0_20px_rgba(245,158,11,0.4)] mb-5 group-hover:scale-105 transition-transform duration-300">
+            <div class="w-full h-full rounded-full overflow-hidden bg-slate-900 border-2 border-slate-900 flex items-center justify-center text-3xl font-black text-amber-400 font-heading">
+              DP
+            </div>
+          </div>
+
+          <div class="inline-block px-4 py-1 rounded-full bg-slate-800 text-amber-300 text-xs font-bold uppercase mb-2 border border-slate-700">
+            Co-Founder & Operations Director
+          </div>
+          <h3 class="text-2xl font-bold text-white font-heading">
+            Dharminder Prajapat
+          </h3>
+          <p class="text-xs text-amber-400 font-bold mb-4">
+            Technical Safety & Site Operations
+          </p>
+          <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-6">
+            Oversees hydraulic machinery maintenance, structural slings and rigging integrity, and crane operator safety protocols for industrial and commercial projects.
+          </p>
+
+          <div class="w-full space-y-2 border-t border-slate-800/80 pt-4 text-xs text-slate-300 text-left">
+            <div><strong class="text-white">Direct Line:</strong> <a href="tel:9982842357" class="text-amber-400 font-bold hover:underline">+91 9982842357</a></div>
+            <div><strong class="text-white">Specialty:</strong> Heavy Rigging & Field Engineering</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= CONTACT & OPERATIONAL YARD ================= -->
+  <section id="contact" class="py-18 max-w-[96rem] mx-auto px-6 sm:px-8 lg:px-12 relative">
+    <div class="lighting-glow-blue bottom-0 right-10"></div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start relative z-10">
+      
+      <div class="lg:col-span-6 space-y-6">
+        <div>
+          <div class="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full text-xs font-bold bg-amber-500/15 text-amber-400 border border-amber-500/30 mb-2 shadow-[0_0_15px_rgba(245,158,11,0.2)]">
+            <i data-lucide="map-pin" class="w-3.5 h-3.5 text-amber-400"></i>
+            <span>Headquarters & Operational Yard</span>
+          </div>
+          <h2 class="text-2xl sm:text-4xl font-extrabold font-heading text-white tracking-tight">
+            RIICO Ghiloth, Neemrana (Pincode: 301705)
+          </h2>
+          <p class="text-slate-200 text-sm sm:text-base mt-2">
+            Round-the-clock heavy lifting support throughout the 301705 industrial corridor and neighboring industrial zones.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          
+          <a href="https://www.google.com/maps/place/Devatwal+Crane+Service/@28.0604817,76.4195232" target="_blank" rel="noopener noreferrer" class="box-amber-bright p-5 rounded-2xl flex items-start justify-between space-x-4 group cursor-pointer hover:border-amber-400 transition-all block text-left" title="Click to Open Devatwal Crane Service Yard on Google Maps">
+            <div class="flex items-start space-x-4">
+              <div class="p-3 rounded-xl bg-amber-500/20 text-amber-400 shrink-0 group-hover:bg-amber-500/30 group-hover:scale-110 transition-all">
+                <i data-lucide="map-pin" class="w-6 h-6 text-amber-400"></i>
+              </div>
+              <div>
+                <div class="text-xs text-amber-400 font-bold uppercase flex items-center space-x-2">
+                  <span>Yard Address:</span>
+                  <span class="text-[10px] bg-amber-500/25 text-amber-300 px-2 py-0.5 rounded-full border border-amber-500/40">📍 Click to Open Google Maps ↗</span>
+                </div>
+                <div class="text-white font-bold text-sm sm:text-base mt-1 group-hover:text-amber-300 transition-colors">
+                  RIICO Industrial Area, Ghiloth, Neemrana, Alwar, Rajasthan - 301705
+                </div>
+                <div class="text-xs text-slate-400 mt-1">
+                  Stationed Yard • Immediate Crane Dispatch across 301705
+                </div>
+              </div>
+            </div>
+            <div class="shrink-0 p-1 text-slate-400 group-hover:text-amber-400 transition-colors">
+              <i data-lucide="external-link" class="w-5 h-5"></i>
+            </div>
+          </a>
+
+          <div class="tech-card-bright p-5 rounded-2xl flex items-start space-x-4">
+            <div class="p-3 rounded-xl bg-emerald-600/20 text-emerald-400 shrink-0">
+              <i data-lucide="phone-call" class="w-6 h-6"></i>
+            </div>
+            <div class="w-full">
+              <div class="text-xs text-emerald-400 font-bold uppercase mb-1">Direct Calling Lines:</div>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs sm:text-sm font-mono font-bold">
+                <div class="p-2 rounded-lg bg-slate-900/80 border border-slate-800">
+                  <div class="text-[10px] text-slate-400 font-sans font-medium uppercase">Founder:</div>
+                  <a href="tel:9414333328" class="text-white hover:text-amber-400 transition-colors block">+91 9414333328</a>
+                  <a href="tel:9950233073" class="text-white hover:text-amber-400 transition-colors block text-xs mt-0.5">+91 9950233073</a>
+                  <span class="text-amber-400 text-[10px] font-sans font-semibold">Satyapal ji</span>
+                </div>
+                <div class="p-2 rounded-lg bg-slate-900/80 border border-slate-800">
+                  <div class="text-[10px] text-slate-400 font-sans font-medium uppercase">Co-Founder:</div>
+                  <a href="tel:8003721244" class="text-white hover:text-sky-400 transition-colors block">+91 8003721244</a>
+                  <span class="text-sky-400 text-[10px] font-sans font-semibold mt-1 block">Maman ji</span>
+                </div>
+                <div class="p-2 rounded-lg bg-slate-900/80 border border-slate-800">
+                  <div class="text-[10px] text-slate-400 font-sans font-medium uppercase">Co-Founder:</div>
+                  <a href="tel:9982842357" class="text-white hover:text-amber-400 transition-colors block">+91 9982842357</a>
+                  <span class="text-amber-400 text-[10px] font-sans font-semibold mt-1 block">Dharminder ji</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="box-amber-bright p-5 rounded-2xl flex items-start space-x-4">
+            <div class="p-3 rounded-xl bg-sky-600/20 text-sky-400 shrink-0">
+              <i data-lucide="mail" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <div class="text-xs text-amber-400 font-bold uppercase">Official Inquiries Email:</div>
+              <a href="mailto:satyapaldevatwal@gmail.com" class="text-white hover:text-amber-400 font-bold text-sm sm:text-base block mt-0.5">
+                satyapaldevatwal@gmail.com
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <div>
+          <div class="text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">
+            Service Coverage within Pincode 301705:
+          </div>
+          <div class="flex flex-wrap gap-2 text-xs">
+            <span class="px-3 py-1.5 bg-slate-900 text-slate-200 rounded-lg border border-slate-700 font-medium">RIICO Ghiloth Industrial Area</span>
+            <span class="px-3 py-1.5 bg-slate-900 text-slate-200 rounded-lg border border-slate-700 font-medium">RIICO Neemrana Phase 1, 2, 3</span>
+            <span class="px-3 py-1.5 bg-slate-900 text-slate-200 rounded-lg border border-slate-700 font-medium">Japanese Industrial Zone</span>
+            <span class="px-3 py-1.5 bg-slate-900 text-slate-200 rounded-lg border border-slate-700 font-medium">EPIP Industrial Park</span>
+            <span class="px-3 py-1.5 bg-slate-900 text-slate-200 rounded-lg border border-slate-700 font-medium">Shahjahanpur & Behror Corridor</span>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap gap-4 pt-2">
+          <a href="tel:9414333328" class="flex items-center space-x-2 bg-emerald-600 hover:bg-emerald-500 text-white px-6 py-3.5 rounded-xl font-bold text-sm shadow transition-all">
+            <i data-lucide="phone-call" class="w-5 h-5"></i>
+            <span>Call +91 9414333328</span>
+          </a>
+          <button class="btn-send-email flex items-center space-x-2 btn-sunset-primary text-black px-6 py-3.5 rounded-xl font-black text-sm uppercase tracking-wider transition-all shadow-[0_0_20px_rgba(245,158,11,0.5)]">
+            <i data-lucide="mail" class="w-5 h-5 text-black"></i>
+            <span>Open Email Draft</span>
+          </button>
+        </div>
+
+      </div>
+
+      <div class="lg:col-span-6 bg-slate-950 rounded-3xl border border-slate-700/80 overflow-hidden shadow-2xl flex flex-col">
+        
+        <!-- Header Bar with Google Maps Badge & Direct Link -->
+        <div class="p-4 bg-slate-900/95 border-b border-slate-800 flex flex-wrap items-center justify-between gap-3">
+          <div class="flex items-center space-x-2.5">
+            <div class="w-8 h-8 rounded-lg bg-blue-600/20 border border-blue-500/40 flex items-center justify-center">
+              <i data-lucide="map-pin" class="w-5 h-5 text-blue-400"></i>
+            </div>
+            <div>
+              <span class="text-xs sm:text-sm font-bold text-white block">Devatwal Crane Service Yard</span>
+              <span class="text-[11px] text-amber-400 font-medium">RIICO Industrial Area Ghiloth, Neemrana (301705)</span>
+            </div>
+          </div>
+          <a href="https://www.google.com/maps/place/Devatwal+Crane+Service/@28.0604817,76.4195232" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-1.5 bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold px-3.5 py-2 rounded-lg shadow-md transition-all">
+            <span>Open in Maps</span>
+            <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+          </a>
+        </div>
+
+        <!-- Interactive Satellite Google Map (t=k for Satellite Imagery, z=17 for high-detail zoom) -->
+        <div class="h-96 w-full bg-slate-950 relative">
+          <iframe 
+            id="satellite-crane-map"
+            src="https://maps.google.com/maps?q=28.0604817,76.4195232+(Devatwal+Crane+Service)&t=k&z=17&ie=UTF8&iwloc=B&output=embed" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Devatwal Crane Service Satellite Location Map">
+          </iframe>
+        </div>
+
+        <!-- Footer Coordinates & Direct App Link -->
+        <div class="p-4 bg-slate-900/95 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
+          <div class="text-slate-300 flex items-center space-x-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span><strong>GPS Coordinates:</strong> 28.0604817° N, 76.4195232° E</span>
+          </div>
+          <a href="https://www.google.com/maps/place/Devatwal+Crane+Service/@28.0604817,76.4195232" target="_blank" rel="noopener noreferrer" class="text-amber-400 hover:text-amber-300 font-bold flex items-center space-x-1">
+            <span>Official Google Maps Listing</span>
+            <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-[#02050D] border-t border-slate-800/80 pt-14 pb-14 text-slate-400 text-xs">
+    <div class="max-w-[96rem] mx-auto px-6 sm:px-8 lg:px-12">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-10 border-b border-slate-800/80">
+        
+        <div class="space-y-3">
+          <div class="flex items-center space-x-3">
+            <div class="w-12 h-12 rounded-full overflow-hidden border-2 border-amber-500 shadow-[0_0_15px_rgba(245,158,11,0.5)] bg-slate-900">
+              <img src="/images/logo_crane_full_circle.png" alt="Devatwal Crane Logo" class="w-full h-full object-cover">
+            </div>
+            <div>
+              <div class="text-base font-black yellow-lighting-title font-heading">DEVATWAL CRANE</div>
+              <div class="text-[10px] font-black service-yellow-lighting tracking-wider">SERVICE</div>
+            </div>
+          </div>
+          <p class="leading-relaxed text-slate-300">
+            Delivering precision heavy lifting and crane contracting solutions across RIICO Ghiloth, Neemrana, and Alwar district (301705) since 2016.
+          </p>
+          <div class="text-amber-400 font-bold text-[11px]">
+            Lift Higher... Go Further... Safe, Powerful, Reliable.
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-sm uppercase mb-3">Navigation</h4>
+          <ul class="space-y-2 font-medium">
+            <li><a href="#hero" class="hover:text-amber-400">Home</a></li>
+            <li><a href="#booking-section" class="hover:text-amber-400 text-amber-300 font-bold">Book Slot</a></li>
+            <li><a href="#fleet" class="hover:text-amber-400">Crane Fleet Varieties</a></li>
+            <li><a href="#leadership" class="hover:text-amber-400">Leadership</a></li>
+            <li><a href="#contact" class="hover:text-amber-400">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-sm uppercase mb-3">Contact Information</h4>
+          <ul class="space-y-2 font-medium">
+            <li class="flex items-center space-x-1.5">
+              <i data-lucide="phone" class="w-3.5 h-3.5 text-emerald-400"></i>
+              <a href="tel:9414333328" class="text-white hover:text-amber-400 font-mono">+91 9414333328 / 9950233073 (Satyapal ji)</a>
+            </li>
+            <li class="flex items-center space-x-1.5">
+              <i data-lucide="phone" class="w-3.5 h-3.5 text-emerald-400"></i>
+              <a href="tel:8003721244" class="text-white hover:text-amber-400 font-mono">+91 8003721244 (Maman ji)</a>
+            </li>
+            <li class="flex items-center space-x-1.5">
+              <i data-lucide="phone" class="w-3.5 h-3.5 text-emerald-400"></i>
+              <a href="tel:9982842357" class="text-white hover:text-amber-400 font-mono">+91 9982842357 (Dharminder ji)</a>
+            </li>
+            <li class="flex items-center space-x-1.5">
+              <i data-lucide="mail" class="w-3.5 h-3.5 text-amber-400"></i>
+              <a href="mailto:satyapaldevatwal@gmail.com" class="text-white hover:text-amber-400 truncate">satyapaldevatwal@gmail.com</a>
+            </li>
+            <li class="flex items-start space-x-1.5 mt-2">
+              <i data-lucide="map-pin" class="w-3.5 h-3.5 text-amber-400 shrink-0 mt-0.5"></i>
+              <span>RIICO Industrial Area Ghiloth, Neemrana, Alwar, Rajasthan - 301705</span>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-sm uppercase mb-3">Enterprise Governance</h4>
+          <div class="space-y-2 font-medium">
+            <div>
+              <strong class="text-white">Satyapal Prajapat</strong>
+              <div class="text-[11px] text-amber-400 font-bold">Founder & Managing Director</div>
+            </div>
+            <div>
+              <strong class="text-white">Maman Prajapat & Dharminder Prajapat</strong>
+              <div class="text-[11px] text-slate-400">Co-Founders & Technical Directors</div>
+            </div>
+            <div class="pt-2">
+              <span class="inline-block px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/40 text-[10px] font-bold">
+                ✓ Insured & Certified Crane Fleet
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-slate-400 text-xs gap-2">
+        <div>
+          © 2016-2026 <strong>Devatwal Crane Service</strong>. All Rights Reserved.
+        </div>
+        <div>
+          RIICO Industrial Area Ghiloth & Neemrana • Pincode 301705
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= MODAL 1: BOOKING SUCCESS ================= -->
+  <div id="booking-success-modal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md hidden items-center justify-center p-4">
+    <div class="box-amber-bright rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative overflow-hidden text-center bg-slate-900 border-amber-500/50">
+      <div class="w-16 h-16 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 mx-auto flex items-center justify-center mb-4">
+        <i data-lucide="check-circle-2" class="w-10 h-10"></i>
+      </div>
+
+      <h3 class="text-2xl font-bold text-white font-heading">
+        Booking Successfully Placed!
+      </h3>
+      <p class="text-xs sm:text-sm text-slate-300 mt-1 mb-4">
+        Your crane reservation details have been logged and transmitted to <span class="text-amber-400 font-semibold">satyapaldevatwal@gmail.com</span>.
+      </p>
+
+      <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 mb-5 text-left">
+        <div class="text-xs text-slate-400">Booking Reference ID:</div>
+        <div id="success-booking-id" class="text-xl font-bold text-amber-400 font-mono tracking-wider mt-0.5 mb-3">DCS-2026-XXXX</div>
+        <div id="success-booking-details"></div>
+      </div>
+
+      <div class="space-y-2">
+        <a id="success-btn-whatsapp" href="#" target="_blank" class="w-full flex items-center justify-center space-x-2 bg-emerald-600 hover:bg-emerald-500 text-white py-3 rounded-xl font-bold text-sm shadow transition-all">
+          <i data-lucide="message-circle" class="w-5 h-5"></i>
+          <span>Confirm on WhatsApp with Satyapal ji</span>
+        </a>
+
+        <div class="grid grid-cols-2 gap-2">
+          <a id="success-btn-call" href="tel:9414333328" class="flex items-center justify-center space-x-1.5 bg-slate-950 hover:bg-slate-800 text-white py-2.5 rounded-xl text-xs font-semibold border border-slate-800">
+            <i data-lucide="phone" class="w-4 h-4 text-emerald-400"></i>
+            <span>Call Directly</span>
+          </a>
+          <button class="btn-send-email flex items-center justify-center space-x-1.5 bg-slate-950 hover:bg-slate-800 text-amber-400 py-2.5 rounded-xl text-xs font-semibold border border-slate-800">
+            <i data-lucide="mail" class="w-4 h-4"></i>
+            <span>Email Draft</span>
+          </button>
+        </div>
+      </div>
+
+      <button id="close-success-modal" class="mt-4 text-xs text-slate-400 hover:text-white underline">
+        Close Window
+      </button>
+    </div>
+  </div>
+
+  <!-- ================= MODAL 2: GALLERY LIGHTBOX ================= -->
+  <div id="gallery-lightbox-modal" class="fixed inset-0 z-50 bg-black/95 backdrop-blur-md hidden items-center justify-center p-4">
+    <button id="close-lightbox-modal" class="absolute top-4 right-4 p-3 text-slate-300 hover:text-white bg-slate-900 rounded-full border border-slate-800 z-10">
+      <i data-lucide="x" class="w-6 h-6"></i>
+    </button>
+    <div class="max-w-5xl w-full flex flex-col items-center">
+      <img id="lightbox-img" src="" alt="Devatwal Crane Service" class="max-h-[80vh] w-auto max-w-full rounded-2xl shadow-2xl border border-slate-800 object-contain">
+      <div id="lightbox-caption" class="text-white text-sm sm:text-base font-semibold mt-3 text-center px-5 py-2.5 bg-slate-900/90 rounded-xl border border-slate-800"></div>
+    </div>
+  </div>
+
+  <!-- ================= MODAL 3: EMAIL DISPATCH CENTER ================= -->
+  <div id="email-dispatcher-modal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md hidden items-center justify-center p-4">
+    <div class="box-amber-bright rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative overflow-hidden bg-slate-900 border-amber-500/50">
+      
+      <button id="close-email-modal" class="absolute top-4 right-4 p-2 text-slate-400 hover:text-white bg-slate-800 rounded-full border border-slate-700">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="flex items-center space-x-3 mb-4">
+        <div class="w-12 h-12 rounded-2xl bg-amber-500/20 text-amber-400 border border-amber-400/40 flex items-center justify-center shrink-0">
+          <i data-lucide="mail" class="w-6 h-6"></i>
+        </div>
+        <div>
+          <h3 class="text-xl font-black text-white font-heading">
+            Direct Email Inquiries
+          </h3>
+          <p class="text-xs text-amber-400 font-semibold font-mono">
+            satyapaldevatwal@gmail.com
+          </p>
+        </div>
+      </div>
+
+      <p class="text-xs text-slate-300 mb-5 leading-relaxed">
+        Choose your preferred email service provider below. We have automatically pre-filled the inquiry subject and project requirements for you:
+      </p>
+
+      <!-- Provider 1-Click Launchers -->
+      <div class="space-y-2.5 mb-5">
+        <!-- 1. Gmail Web Launcher -->
+        <a id="btn-launch-gmail" href="#" target="_blank" class="w-full flex items-center justify-between px-4 py-3 bg-red-600 hover:bg-red-500 text-white rounded-xl font-bold text-sm shadow-md transition-all group">
+          <div class="flex items-center space-x-3">
+            <span class="text-lg">🔴</span>
+            <span>Open in Gmail (Web Browser)</span>
+          </div>
+          <i data-lucide="external-link" class="w-4 h-4 text-white/80 group-hover:translate-x-0.5 transition-transform"></i>
+        </a>
+
+        <!-- 2. Default System Mail App (mailto) -->
+        <a id="btn-launch-mailto" href="#" class="w-full flex items-center justify-between px-4 py-3 bg-blue-600 hover:bg-blue-500 text-white rounded-xl font-bold text-sm shadow-md transition-all group">
+          <div class="flex items-center space-x-3">
+            <span class="text-lg">💻</span>
+            <span>Open in Default Mail App (Outlook / Apple Mail)</span>
+          </div>
+          <i data-lucide="arrow-right" class="w-4 h-4 text-white/80 group-hover:translate-x-0.5 transition-transform"></i>
+        </a>
+
+        <!-- 3. Outlook.com Web -->
+        <a id="btn-launch-outlook" href="#" target="_blank" class="w-full flex items-center justify-between px-4 py-3 bg-slate-800 hover:bg-slate-700 text-sky-300 border border-slate-700 rounded-xl font-semibold text-xs sm:text-sm transition-all group">
+          <div class="flex items-center space-x-3">
+            <span class="text-lg">🔷</span>
+            <span>Open in Outlook.com / Office 365 Web</span>
+          </div>
+          <i data-lucide="external-link" class="w-4 h-4 text-slate-400 group-hover:translate-x-0.5 transition-transform"></i>
+        </a>
+
+        <!-- 4. Yahoo Mail Web -->
+        <a id="btn-launch-yahoo" href="#" target="_blank" class="w-full flex items-center justify-between px-4 py-3 bg-slate-800 hover:bg-slate-700 text-purple-300 border border-slate-700 rounded-xl font-semibold text-xs sm:text-sm transition-all group">
+          <div class="flex items-center space-x-3">
+            <span class="text-lg">🟣</span>
+            <span>Open in Yahoo Mail</span>
+          </div>
+          <i data-lucide="external-link" class="w-4 h-4 text-slate-400 group-hover:translate-x-0.5 transition-transform"></i>
+        </a>
+      </div>
+
+      <!-- Copy Email & Text Section -->
+      <div class="border-t border-slate-800 pt-4">
+        <button id="btn-copy-email-text" class="w-full flex items-center justify-center space-x-2 bg-slate-950 hover:bg-slate-800 text-slate-200 border border-slate-700 hover:border-amber-400 py-2.5 rounded-xl text-xs font-bold transition-all">
+          <i data-lucide="copy" class="w-4 h-4 text-amber-400"></i>
+          <span>Copy Inquiry Message & Email Address to Clipboard</span>
+        </button>
+      </div>
+
+      <!-- Direct In-Modal Quick Message Form -->
+      <div class="border-t border-slate-800 mt-4 pt-4">
+        <details class="text-xs text-slate-300">
+          <summary class="cursor-pointer font-bold text-amber-400 hover:underline">
+            Or send message directly from this webpage (No email app needed) ▾
+          </summary>
+          <form id="quick-inmodal-email-form" class="mt-3 space-y-2.5">
+            <input type="text" id="modal-name" required placeholder="Your Name or Company" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-white text-xs">
+            <input type="tel" id="modal-phone" required placeholder="Your Mobile Phone Number" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-white text-xs">
+            <textarea id="modal-message" rows="2" placeholder="Tell us your lifting requirements..." class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-white text-xs"></textarea>
+            <button type="submit" id="btn-send-modal-msg" class="w-full btn-sunset-primary text-black py-2 rounded-lg text-xs font-bold">
+              Send Message Directly
+            </button>
+          </form>
+        </details>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Application Scripts -->
+  <script src="/js/crane3d.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

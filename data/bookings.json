@@ -1,0 +1,50 @@
+[
+  {
+    "id": "DCS-143614",
+    "name": "Hemant Test",
+    "phone": "9414333328",
+    "email": "N/A",
+    "craneType": "ACE 12XW Hydra (Window AC Cabin)",
+    "workType": "Building Construction",
+    "date": "2026-11-26",
+    "timeSlot": "Morning",
+    "location": "RIICO Ghiloth",
+    "pincode": "301705",
+    "loadWeight": "To be assessed on site",
+    "notes": "",
+    "status": "CONFIRMED_PENDING_DISPATCH",
+    "createdAt": "2026-11-25T15:39:03.614Z"
+  },
+  {
+    "id": "DCS-882603",
+    "name": "dggf",
+    "phone": "9352621988",
+    "email": "hemant@gmail.com",
+    "craneType": "ACE 14XW High-Reach (Window AC Cabin)",
+    "workType": "Building Construction & Pillar Lifting",
+    "date": "2026-11-09",
+    "timeSlot": "Afternoon Shift (12:00 PM - 04:00 PM)",
+    "location": "riico",
+    "pincode": "301705",
+    "loadWeight": "Up to 5 Tons",
+    "notes": "fgf",
+    "status": "CONFIRMED_PENDING_DISPATCH",
+    "createdAt": "2026-11-25T14:44:42.603Z"
+  },
+  {
+    "id": "DCS-829743",
+    "name": "Sharma Construction Co.",
+    "phone": "9876543210",
+    "email": "sharma.infra@gmail.com",
+    "craneType": "ACE 14XW High-Reach (Window AC Cabin)",
+    "workType": "Building Construction and Pillar Lifting",
+    "date": "2026-11-26",
+    "timeSlot": "Morning Shift (08:00 AM - 12:00 PM)",
+    "location": "RIICO Industrial Area Ghiloth, Plot 42",
+    "pincode": "301705",
+    "loadWeight": "12 Tons",
+    "notes": "High rise structural concrete pillar erection work",
+    "status": "CONFIRMED_PENDING_DISPATCH",
+    "createdAt": "2026-11-25T14:27:09.743Z"
+  }
+]

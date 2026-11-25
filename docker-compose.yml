@@ -1,0 +1,20 @@
+services:
+  devatwal-crane:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: devatwal-crane-service:latest
+    container_name: devatwal_crane_service_portal
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - OWNER_EMAIL=satyapaldevatwal@gmail.com
+    volumes:
+      - ./data:/app/data
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://127.0.0.1:3000/api/health"]
+      interval: 20s
+      timeout: 5s
+      retries: 3

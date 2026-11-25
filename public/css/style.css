@@ -1,0 +1,433 @@
+/* Devatwal Crane Service - High-Tech Architectural IT Enterprise Stylesheet */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --tech-blue: #2563eb;
+  --tech-cyan: #38bdf8;
+  --tech-indigo: #6366f1;
+  --tech-gold: #f59e0b;
+  --tech-yellow: #fbbf24;
+  --tech-surface: rgba(12, 19, 36, 0.88);
+  --tech-card: rgba(15, 23, 42, 0.82);
+  --tech-border: rgba(56, 189, 248, 0.35);
+  --tech-border-glow: rgba(56, 189, 248, 0.8);
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #030712;
+  color: #f8fafc;
+  overflow-x: hidden;
+  /* Modern High-Tech Architectural Background */
+  background: 
+    radial-gradient(circle at 80% 20%, rgba(37, 99, 235, 0.22) 0%, transparent 45%),
+    radial-gradient(circle at 20% 60%, rgba(245, 158, 11, 0.16) 0%, transparent 50%),
+    linear-gradient(180deg, rgba(3, 7, 18, 0.88) 0%, rgba(8, 14, 28, 0.92) 50%, rgba(3, 7, 18, 0.95) 100%),
+    url('/images/tech_building_bg.jpg') center top / cover no-repeat fixed;
+}
+
+h1, h2, h3, h4, h5, .font-heading {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+/* Ambient Lighting Overlays */
+.lighting-glow-blue {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.25) 0%, rgba(3, 7, 18, 0) 70%);
+  filter: blur(70px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.lighting-glow-cyan {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.22) 0%, rgba(3, 7, 18, 0) 70%);
+  filter: blur(65px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.lighting-glow-amber {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(245, 158, 11, 0.22) 0%, rgba(3, 7, 18, 0) 70%);
+  filter: blur(65px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ================= DESIGNED YELLOW LIGHTING TEXT & HEADINGS ================= */
+.yellow-lighting-title {
+  color: #fbbf24;
+  text-shadow: 
+    0 0 10px rgba(245, 158, 11, 0.9),
+    0 0 24px rgba(245, 158, 11, 0.6),
+    0 0 45px rgba(217, 119, 6, 0.45);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+.yellow-neon-gradient {
+  background: linear-gradient(135deg, #ffffff 0%, #fef08a 25%, #f59e0b 70%, #d97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 20px rgba(245, 158, 11, 0.85));
+}
+
+.service-yellow-lighting {
+  color: #fde047;
+  text-shadow: 
+    0 0 12px rgba(253, 224, 71, 0.95),
+    0 0 28px rgba(245, 158, 11, 0.75),
+    0 0 50px rgba(217, 119, 6, 0.4);
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+/* ================= BRIGHT RADIANT CARDS & BOXES ================= */
+.tech-card {
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1.5px solid rgba(56, 189, 248, 0.35);
+  box-shadow: 
+    0 14px 40px -10px rgba(0, 0, 0, 0.85),
+    0 0 25px -5px rgba(56, 189, 248, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tech-card:hover {
+  border-color: rgba(56, 189, 248, 0.85);
+  box-shadow: 
+    0 20px 50px -10px rgba(37, 99, 235, 0.4),
+    0 0 35px rgba(56, 189, 248, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  transform: translateY(-3px);
+}
+
+.tech-card-bright {
+  background: rgba(15, 23, 42, 0.88);
+  backdrop-filter: blur(28px);
+  -webkit-backdrop-filter: blur(28px);
+  border: 1.5px solid rgba(56, 189, 248, 0.5);
+  box-shadow: 
+    0 14px 40px -10px rgba(0, 0, 0, 0.85),
+    0 0 25px -5px rgba(56, 189, 248, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.18);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tech-card-bright:hover {
+  border-color: #38bdf8;
+  box-shadow: 
+    0 20px 50px -10px rgba(37, 99, 235, 0.45),
+    0 0 40px rgba(56, 189, 248, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  transform: translateY(-3px);
+}
+
+.box-amber-bright {
+  background: rgba(15, 23, 42, 0.88);
+  backdrop-filter: blur(28px);
+  border: 1.5px solid rgba(245, 158, 11, 0.55);
+  box-shadow: 
+    0 14px 40px -10px rgba(0, 0, 0, 0.85),
+    0 0 25px -5px rgba(245, 158, 11, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.18);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.box-amber-bright:hover {
+  border-color: #fbbf24;
+  box-shadow: 
+    0 20px 50px -10px rgba(245, 158, 11, 0.5),
+    0 0 40px rgba(245, 158, 11, 0.55),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  transform: translateY(-3px);
+}
+
+/* Subtle Laser Accent Line */
+.laser-line-cyan {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(56, 189, 248, 0.95), rgba(245, 158, 11, 0.95), transparent);
+}
+
+/* ================= DESIGNED BUTTONS ================= */
+.btn-tech-primary {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  border: 1px solid rgba(56, 189, 248, 0.6);
+  box-shadow: 0 4px 22px rgba(37, 99, 235, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  transition: all 0.25s ease;
+}
+
+.btn-tech-primary:hover {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  border-color: rgba(56, 189, 248, 0.95);
+  box-shadow: 0 6px 30px rgba(56, 189, 248, 0.65), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  transform: translateY(-1.5px);
+}
+
+.btn-sunset-primary {
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  border: 1px solid #fef08a;
+  box-shadow: 0 4px 24px rgba(245, 158, 11, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  transition: all 0.25s ease;
+}
+
+.btn-sunset-primary:hover {
+  background: linear-gradient(135deg, #fef08a, #fbbf24);
+  box-shadow: 0 6px 32px rgba(245, 158, 11, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  transform: translateY(-1.5px);
+}
+
+/* ================= NAV MENU DESIGNED PILL TABS ================= */
+.nav-pill-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1.25rem;
+  border-radius: 9999px;
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid rgba(71, 85, 105, 0.7);
+  color: #e2e8f0;
+  font-weight: 700;
+  font-size: 0.875rem;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
+}
+
+.nav-pill-item:hover {
+  background: rgba(30, 41, 59, 0.95);
+  border-color: #f59e0b;
+  color: #fef08a;
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.45);
+  transform: translateY(-1.5px);
+}
+
+.nav-pill-item.active {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.28), rgba(217, 119, 6, 0.18));
+  border-color: #f59e0b;
+  color: #fbbf24;
+  box-shadow: 0 0 22px rgba(245, 158, 11, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+/* ================= DESIGNED LARGE HERO CRANE SHOWCASE FRAME ================= */
+.hero-crane-designed-frame {
+  position: relative;
+  border-radius: 2rem;
+  overflow: hidden;
+  background: linear-gradient(145deg, rgba(15, 23, 42, 0.95), rgba(8, 14, 28, 0.98));
+  border: 2.5px solid rgba(245, 158, 11, 0.65);
+  box-shadow: 
+    0 25px 65px -15px rgba(0, 0, 0, 0.95),
+    0 0 45px rgba(245, 158, 11, 0.4),
+    0 0 65px rgba(56, 189, 248, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hero-crane-designed-frame:hover {
+  border-color: #fbbf24;
+  box-shadow: 
+    0 30px 80px -15px rgba(0, 0, 0, 1),
+    0 0 60px rgba(245, 158, 11, 0.6),
+    0 0 85px rgba(56, 189, 248, 0.4);
+  transform: scale(1.015);
+}
+
+/* ================= BRIGHT FLOATING CORNER DOCK ================= */
+.fixed-floating-corner-dock {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  align-items: center;
+}
+
+.corner-dock-btn {
+  width: 3.6rem;
+  height: 3.6rem;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  backdrop-filter: blur(14px);
+  position: relative;
+}
+
+.corner-dock-btn:hover {
+  transform: scale(1.15);
+}
+
+.corner-dock-btn-phone {
+  background: linear-gradient(135deg, #10b981, #059669);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+  border: 2px solid #34d399;
+}
+.corner-dock-btn-phone:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.85);
+  transform: scale(1.1);
+}
+
+.corner-dock-btn-email {
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+  border: 2px solid #fef08a;
+  color: #000;
+}
+.corner-dock-btn-email:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.85);
+  transform: scale(1.1);
+}
+
+.corner-dock-btn-wa {
+  background: linear-gradient(135deg, #16a34a, #15803d);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+  border: 2px solid #4ade80;
+}
+.corner-dock-btn-wa:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.85);
+  transform: scale(1.1);
+}
+
+.corner-dock-btn .dock-tooltip {
+  position: absolute;
+  right: 4.4rem;
+  background: #0f172a;
+  color: #fff;
+  padding: 0.4rem 0.9rem;
+  border-radius: 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 800;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateX(8px);
+  transition: all 0.2s ease;
+  border: 1px solid rgba(56, 189, 248, 0.45);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+}
+
+.corner-dock-btn:hover .dock-tooltip {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #030712;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f59e0b;
+}
+
+/* Active Selection in Booking */
+.crane-option-card.selected {
+  border-color: #f59e0b !important;
+  background-color: rgba(245, 158, 11, 0.15) !important;
+  box-shadow: 0 0 0 2px #f59e0b, 0 0 20px rgba(245, 158, 11, 0.3);
+}
+
+/* Modals */
+.modal-active {
+  display: flex !important;
+  animation: techModalFade 0.2s ease-out;
+}
+
+@keyframes techModalFade {
+  from { opacity: 0; transform: scale(0.97); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Toast Message */
+.toast-notice {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 100;
+  background: #0f172a;
+  border: 1.5px solid #f59e0b;
+  color: #fff;
+  padding: 0.85rem 1.4rem;
+  border-radius: 0.85rem;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.85), 0 0 20px rgba(245, 158, 11, 0.4);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  animation: toastSlideIn 0.3s ease-out;
+}
+
+@keyframes toastSlideIn {
+  from { opacity: 0; transform: translateY(-12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* Exact Master Banner Interactive Hotspots & Styling */
+.hero-btn-hotspot {
+  position: absolute;
+  border-radius: 9999px;
+  cursor: pointer;
+  z-index: 25;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  background: transparent;
+}
+
+.hero-btn-hotspot-booking {
+  left: 3.65%;
+  top: 85.8%;
+  width: 19.85%;
+  height: 8.2%;
+}
+
+.hero-btn-hotspot-booking:hover,
+.hero-btn-hotspot-booking:focus-visible {
+  background: rgba(245, 158, 11, 0.18);
+  box-shadow: 0 0 25px rgba(245, 158, 11, 0.7);
+  outline: 2px solid rgba(254, 240, 138, 0.85);
+  transform: translateY(-1px);
+}
+
+.hero-btn-hotspot-quote {
+  left: 24.9%;
+  top: 85.2%;
+  width: 14.2%;
+  height: 8.5%;
+}
+
+.hero-btn-hotspot-quote:hover,
+.hero-btn-hotspot-quote:focus-visible {
+  background: rgba(255, 255, 255, 0.16);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.45);
+  outline: 2px solid rgba(255, 255, 255, 0.85);
+  transform: translateY(-1px);
+}
+
+.hero-slanted-main-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-style: italic;
+  font-weight: 900;
+  letter-spacing: -0.025em;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+}
